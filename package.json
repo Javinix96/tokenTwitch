@@ -1,0 +1,17 @@
+{
+  "name": "tokentwitch",
+  "version": "1.0.0",
+  "description": "obtner token de twitch",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "token"
+  ],
+  "author": "javinix96",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
