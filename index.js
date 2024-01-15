@@ -17,7 +17,7 @@ app.get("/TOKK/", (req, res) => {
 });
 
 app.get("/fullTokk", (req, res) => {
-  console.log(fullToken);
+  console.log(fullToken + "PREUBA");
   res.send(JSON.stringify({ token, fullToken }));
 });
 
