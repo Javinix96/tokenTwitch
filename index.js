@@ -11,6 +11,10 @@ const PORT = 8080;
 
 app.get("/TOKK/", (req, res) => {
   token = req.query.code;
+  if (token === undefined || token === null) {
+    fullToken = null;
+    return;
+  }
   fullToken = `Bearer ${token}`;
   console.log(fullToken);
   res.json("took");
