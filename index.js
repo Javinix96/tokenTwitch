@@ -13,7 +13,7 @@ app.get("/TOKK/", (req, res) => {
   token = req.query.code;
   if (token === undefined || token === null) {
     fullToken = null;
-    return;
+    res.json("Envie el codigo")
   }
   fullToken = `Bearer ${token}`;
   console.log(fullToken);
@@ -24,7 +24,6 @@ app.get("/fullTokk", (req, res) => {
   console.log(fullToken + "PREUBA");
   res.send(JSON.stringify({ token, fullToken }));
 });
-
 app.listen(PORT, () => {
   console.log("Server listerning on Port localhost:" + PORT);
 });
