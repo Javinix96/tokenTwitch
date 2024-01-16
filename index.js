@@ -13,7 +13,7 @@ app.get("/TOKK/", (req, res) => {
   token = req.query.code;
   if (token === undefined || token === null) {
     fullToken = null;
-    return;
+    res.json("Envie el codigo");
   }
   fullToken = `Bearer ${token}`;
   console.log(fullToken);
