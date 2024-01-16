@@ -25,10 +25,10 @@ app.get("/fullTokk", (req, res) => {
   res.send(JSON.stringify({ token, fullToken }));
 });
 
-app.delete("/clear", (res) => {
+app.delete("/clear", (req, res) => {
   token = "";
   fullToken = "";
-  res.json("Token borrado");
+  res.send("Token borrado");
 });
 
 app.listen(PORT, () => {
