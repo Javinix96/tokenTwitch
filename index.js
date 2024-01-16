@@ -25,6 +25,12 @@ app.get("/fullTokk", (req, res) => {
   res.send(JSON.stringify({ token, fullToken }));
 });
 
+app.delete("/clear", (res) => {
+  token = "";
+  fullToken = "";
+  res.json("Token borrado");
+});
+
 app.listen(PORT, () => {
   console.log("Server listerning on Port localhost:" + PORT);
 });
